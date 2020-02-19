@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_back_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="SETTINGS" />
+    </FrameLayout>
+
+    <Switch
+        android:layout_marginTop="20dp"
+        android:id="@+id/s_permission"
+        android:layout_width="match_parent"
+        android:text="Camera permission"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:layout_marginTop="20dp"
+        android:id="@+id/s_hd"
+        android:layout_width="match_parent"
+        android:text="HD Connection"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_marginTop="20dp"
+        android:id="@+id/cb_male"
+        android:layout_width="match_parent"
+        android:text="Look for men"
+        android:checked="true"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_marginTop="20dp"
+        android:id="@+id/cb_female"
+        android:layout_width="match_parent"
+        android:text="Look for women"
+        android:checked="true"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
